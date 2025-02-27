@@ -14,34 +14,27 @@
             color: #ffffff;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #003366, #0066cc);
+            background-color: #003366;
             overflow-x: hidden;
         }
         header {
-            background: #ff6600;
+            background-color: #ff9900;
             color: white;
             text-align: center;
             padding: 20px;
-            font-size: 26px;
-            font-weight: bold;
+            font-size: 24px;
+            position: relative;
         }
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
-        }
-        .box {
+        section {
             background-color: #ffffff;
             color: #333;
-            margin: 10px;
+            margin: 20px auto;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            flex: 1;
-            min-width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
         }
         h2 {
             color: #ff6600;
@@ -52,11 +45,13 @@
             padding-left: 20px;
         }
         footer {
-            background-color: #ff6600;
+            background-color: #ff9900;
             color: white;
             text-align: center;
-            padding: 15px;
-            font-size: 16px;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
         a {
             color: #ff6600;
@@ -66,33 +61,26 @@
             text-decoration: underline;
         }
         .whatsapp-button {
+            display: inline-block;
+            margin: 20px auto;
+            background-color: #25D366;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #25D366;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            width: fit-content;
-            margin: 20px auto;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
         }
         .whatsapp-button img {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-        }
-        .query-box {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 30px auto;
-            max-width: 500px;
+            width: 30px;
+            height: 30px;
         }
     </style>
 </head>
@@ -101,36 +89,38 @@
         <h1>Welcome to SKJ BUSINESS SOLUTIONS LLP</h1>
         <p>Your trusted partner in foreign trade consulting.</p>
     </header>
-    <div class="container">
-        <div class="box">
-            <h2>About Us</h2>
-            <p>We are a premier consulting house specializing in Foreign Trade Policy & Procedure, serving exporters & importers for over 38 years.</p>
-        </div>
-        <div class="box">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Purchase/sale of transferable Duty Credit Scrips (DFIA, RoDTEP, RoSCTL Licenses)</li>
-                <li>Expert Opinion in Exim Policy & Procedural matters</li>
-                <li>Liaison Services for various authorizations, including Advance Authorization, EPCG Licenses, DFIA’s Authorization & Transferability</li>
-                <li>Fixation of Standard Input – Output Norms [SION] for new products</li>
-                <li>Consultation for Application, Follow Up & Issuance of all types of Licenses in DGFT Zonal & Headquarters office</li>
-            </ul>
-            <p>All services are offered at a very reasonable cost with a focus on quality and time management to maximize client profitability.</p>
-        </div>
-        <div class="box">
-            <h2>Contact Us</h2>
-            <p><strong>Address:</strong> 6, Dr Sundari Mohan Avenue, Kolkata 700014</p>
-            <p><strong>Email:</strong> <a href="mailto:jainsinternational@gmail.com">jainsinternational@gmail.com</a></p>
-            <p><strong>Phone:</strong> 9038000677 / 9331036236 / 9831206962</p>
-        </div>
-    </div>
-    <div class="query-box">
+    <section>
+        <h2>About Us</h2>
+        <p>We are a premier consulting house specializing in Foreign Trade Policy & Procedure, serving exporters & importers for over 38 years.</p>
+    </section>
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Purchase/sell of transferable Duty Credit Scrips (DFIA, RoDTEP, RoSCTL Licenses)</li>
+            <li>Expert Opinion in Exim Policy & Procedural matters</li>
+            <li>Liaison Services for various authorizations, including Advance Authorization, EPCG Licenses, DFIA’s Authorization & Transferability</li>
+            <li>Fixation of Standard Input – Output Norms [SION] for new products</li>
+            <li>Consultation for Application, Follow Up & Issuance of all types of Licenses in DGFT Zonal & Headquarters office</li>
+            <li>Application and amendment of Importer Exporter Code No</li>
+            <li>Application for RCMC of Export Promotion Council</li>
+            <li>Application for issuance of Certificate of Origin</li>
+            <li>Application for Status holder Certificate</li>
+        </ul>
+        <p>All services are offered at a very reasonable cost with a focus on quality and time management to maximize client profitability.</p>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 6, Dr Sundari Mohan Avenue, Kolkata 700014</p>
+        <p><strong>Email:</strong> <a href="mailto:jainsinternational@gmail.com">jainsinternational@gmail.com</a></p>
+        <p><strong>Phone:</strong> 9038000677 / 9331036236 / 033-40006382</p>
+    </section>
+    <section class="form-container">
         <h2>Send Us a Query</h2>
-        <p>Click below to reach us on WhatsApp:</p>
+        <p>Click the button below to reach us on WhatsApp:</p>
         <a href="https://wa.me/919038000677" class="whatsapp-button" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Chat with Us
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
         </a>
-    </div>
+    </section>
     <footer>
         <p>&copy; 2025 SKJ BUSINESS SOLUTIONS LLP. All rights reserved.</p>
     </footer>
