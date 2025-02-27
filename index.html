@@ -14,69 +14,71 @@
             color: #ffffff;
             margin: 0;
             padding: 0;
-            background-color: #002b5e;
+            background-color: #003366;
             overflow-x: hidden;
         }
         header {
-            background-color: #ff8c00;
+            background-color: #ff9900;
             color: white;
             text-align: center;
-            padding: 25px;
-            font-size: 26px;
-            font-weight: bold;
+            padding: 20px;
+            font-size: 24px;
+            position: relative;
         }
         section {
             background-color: #ffffff;
             color: #333;
-            margin: 30px auto;
-            padding: 25px;
+            margin: 20px auto;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-            max-width: 900px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
         }
         h2 {
-            color: #ff8c00;
+            color: #ff6600;
             font-family: 'Georgia', serif;
-            text-align: center;
         }
         ul {
             list-style-type: square;
             padding-left: 20px;
         }
         footer {
-            background-color: #ff8c00;
+            background-color: #ff9900;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
             width: 100%;
         }
         a {
-            color: #ff8c00;
+            color: #ff6600;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
-        .whatsapp-section {
-            text-align: center;
-            margin-top: 20px;
-        }
         .whatsapp-button {
-            display: inline-flex;
+            display: flex;
             align-items: center;
             justify-content: center;
             background-color: #25D366;
             color: white;
             font-size: 18px;
             font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 30px;
+            padding: 10px;
+            border-radius: 50px;
             text-decoration: none;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: auto;
+            height: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
         }
         .whatsapp-button img {
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
             margin-right: 10px;
         }
     </style>
@@ -104,6 +106,7 @@
             <li>Application for issuance of Certificate of Origin</li>
             <li>Application for Status holder Certificate</li>
         </ul>
+        <p>All services are offered at a very reasonable cost with a focus on quality and time management to maximize client profitability.</p>
     </section>
     <section>
         <h2>Contact Us</h2>
@@ -111,8 +114,8 @@
         <p><strong>Email:</strong> <a href="mailto:jainsinternational@gmail.com">jainsinternational@gmail.com</a></p>
         <p><strong>Phone:</strong> 9038000677 / 9331036236 / 9831206962</p>
     </section>
-    <section class="whatsapp-section">
-        <h2>Chat with Us</h2>
+    <section class="form-container">
+        <h2>Send Us a Query</h2>
         <a href="https://wa.me/919038000677" class="whatsapp-button" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Chat with us
         </a>
